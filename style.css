@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+body {
+  background: black;
+  font-family: verdana;
+  color: white;
+}
+
+button {
+  width: 110px;
+  height: 40px;
+  margin: 10px;
+  border: 3px solid hotpink;
+  background: black;
+  color: white;
+  font-family: verdana;
+  border-radius: 10px;
+  transition: 0.2s;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background: white;
+  color: black;
+  transition: 0.2s;
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  border: 3px solid hotpink;
+  padding: 15px;
+}
+
+h1:nth-of-type(1) {
+  border-radius: 10px 0 0 10px;
+}
+
+h1:nth-of-type(3) {
+  border-radius: 0 10px 10px 0;
+}
+
+p {
+  margin-bottom: 20px;
+  border: 3px solid hotpink;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input {
+  border: 3px solid hotpink;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 3px;
+  padding-left: 7px;
+  width: 60%;
+}
+
+#time {
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.score {
+  display: flex;
+  flex-direction: row;
+  margin-top: -70px;
+}
+
+.clicked {
+  transform: scale(1) !important;
+}
+
+.disable:hover {
+  background: red;
+}
+
+.disablegreen:hover {
+  background: green;
+}
+
+#border {
+  margin-top: 50px;
+  margin-left: 35%;
+  border: 3px solid hotpink;
+  border-radius: 20px;
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 10px hotpink;
+  transition: 0.3s;
+}
+
+.borderone {
+  box-shadow: 0px 0px 50px 50px green !important;
+  border: 3px solid green !important;
+  transition: 0.3s;
+}
+
+.bordertwo {
+  box-shadow: 0px 0px 50px 50px red !important;
+  border: 3px solid red !important;
+  transition: 0.3s;
+}
+
+@media (max-width: 1500px){
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  #border {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 700px){
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .score {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    width: 100%;
+  }
+  h1 {
+    margin-bottom: -2px;
+    text-align: center;
+  }
+  h1:nth-of-type(1) {
+    border-radius: 10px 10px 0 0px;
+  }
+  h1:nth-of-type(3) {
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 20px;
+  }
+}
