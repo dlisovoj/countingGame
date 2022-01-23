@@ -9,10 +9,7 @@ body {
   background: black;
   font-family: verdana;
   color: white;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
+  background: black;
 }
 
 button {
@@ -66,14 +63,6 @@ input {
   width: 60%;
 }
 
-#time {
-  border-radius: 10px;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
 .flex {
   display: flex;
   flex-direction: column;
@@ -103,16 +92,6 @@ input {
   background: green;
 }
 
-#border {
-  margin-top: 50px;
-  margin-left: 35%;
-  border: 3px solid hotpink;
-  border-radius: 20px;
-  width: 30%;
-  padding: 20px;
-  box-shadow: 0px 0px 5px 10px hotpink;
-  transition: 0.3s;
-}
 
 .borderone {
   box-shadow: 0px 0px 50px 50px green !important;
@@ -142,6 +121,25 @@ input {
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+
+#border {
+  margin-top: 50px;
+  margin-left: 35%;
+  border: 3px solid hotpink;
+  border-radius: 20px;
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 10px hotpink;
+  transition: 0.3s;
+}
+
+#time {
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 700px){
@@ -174,16 +172,4 @@ input {
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 20px;
   }
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
