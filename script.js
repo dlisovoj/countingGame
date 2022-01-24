@@ -21,10 +21,7 @@ setInterval(function(){
 }, 1000);
 
 setInterval(function(){
-  if (target.value < 1) {
-    target.value = 1;
-    to.innerText = `Playing to: 1`
-  }
+    to.innerText = `Playing to: ${target.value}`
 }, 100);
 
 
@@ -94,7 +91,6 @@ reset.addEventListener("click", function() {
   plrtwo.classList.remove("disablegreen");
   one.innerText = `${plronescore}`
   two.innerText = `${plrtwoscore}`
-  to.innerText = `Playing to: ${target.value}`
   reset.classList.add("clicked");
     setTimeout(function(){
       reset.classList.remove("clicked");
